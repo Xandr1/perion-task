@@ -1,0 +1,26 @@
+.background-site {
+  font-family: "DIN Next LT Pro Heavy";
+  background: url("../images/Desktop_cropped1050.png") no-repeat center;
+  height: 1050px;
+  overflow: hidden;
+}
+
+.baner {
+  display: none;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+}
+
+.close {
+  position: relative;
+  top: 20px;
+  left: calc(100% - 70px);
+  background: url("../images/Main_Close_Btn.png") center no-repeat;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 3;
+}

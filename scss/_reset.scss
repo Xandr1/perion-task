@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "DIN Next LT Pro";
+  src: url("../fonts/DIN_Next/DINNextLTPro-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "DIN Next LT Pro Heavy";
+  src: url("../fonts/DIN_Next/DINNextLTPro-Heavy.otf") format("opentype");
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "DIN Next LT Pro", sans-serif;
+}

@@ -1,0 +1,243 @@
+@keyframes por-right {
+  from {
+    left: -1980px;
+  }
+  to {
+    left: calc(-1980px + 50% + 595px);
+  }
+}
+
+@keyframes dal-left {
+  from {
+    right: -2560px;
+  }
+  to {
+    right: calc(-2560px + 50% + 595px + 290px);
+  }
+}
+
+@keyframes por-left {
+  from {
+    left: calc(-1980px + 50% + 595px);
+  }
+  to {
+    left: -1980px;
+  }
+}
+
+@keyframes dal-right {
+  from {
+    right: calc(-2560px + 50% + 595px + 290px);
+  }
+  to {
+    right: -2560px;
+  }
+}
+
+@keyframes por-small-left {
+  from {
+    left: calc(-1980px + 50% + 1200px);
+  }
+  to {
+    left: -1375px;
+  }
+}
+
+@keyframes dal-small-right {
+  from {
+    right: calc(-2560px + 50% + 595px + 1200px);
+  }
+  to {
+    right: -1650px;
+  }
+}
+
+@keyframes logo-opacity {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.1;
+  }
+}
+
+.por {
+  position: absolute;
+  top: 0;
+  left: -1980px;
+  height: 100%;
+  width: 1980px;
+  background: url("../images/USATSI_8760314_POR.png") center no-repeat;
+  filter: sepia(100%) brightness(50%);
+  -webkit-filter: sepia(100%) brightness(50%);
+  animation: 4s ease-in por-right;
+  animation-delay: 7s;
+  z-index: 2;
+}
+
+.dal {
+  position: absolute;
+  top: 0;
+  right: -2560px;
+  height: 100%;
+  width: 2560px;
+  background: url("../images/USATSI_8844527_DAL.png") center no-repeat;
+  filter: sepia(100%) brightness(50%);
+  -webkit-filter: sepia(100%) brightness(50%);
+  animation: 4s ease-in dal-left;
+  animation-delay: 7s;
+  z-index: 2;
+}
+
+.game-text {
+  position: absolute;
+  width: 50%;
+  left: calc(50% - 280px);
+  bottom: calc(50% - 200px);
+  color: #ffffff;
+  text-transform: uppercase;
+  text-shadow: 7px 7px 30px #000000;
+  z-index: 2;
+  &__one {
+    visibility: hidden;
+    font-size: 308px;
+    line-height: 0.75;
+  }
+  &__game {
+    visibility: hidden;
+    font-size: 215px;
+    line-height: 0.75;
+  }
+  &__glory {
+    visibility: hidden;
+    padding-left: 8px;
+    font-size: 122px;
+    line-height: 0.75;
+  }
+}
+
+.portland-logo {
+  display: none;
+  background: url("../images/portland_logo.png") center no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 45%;
+  padding-top: 45%;
+  top: 10%;
+  left: -15%;
+  z-index: 2;
+}
+
+.dallas-logo {
+  display: none;
+  background: url("../images/dallas_logo.png") center no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 45%;
+  padding-top: 45%;
+  top: 10%;
+  right: -15%;
+  z-index: 2;
+}
+
+.portland-logo-small {
+  display: none;
+  background: url("../images/portland_logo_small.png") center no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 20%;
+  padding-top: 20%;
+  top: 30%;
+  left: calc(-1980px + 50% + 1200px);
+  z-index: 2;
+}
+
+.dallas-logo-small {
+  display: none;
+  background: url("../images/dallas_logo_small.png") center no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 20%;
+  padding-top: 20%;
+  top: 30%;
+  right: calc(-2560px + 50% + 595px + 1200px);
+  z-index: 2;
+}
+
+@media screen and (max-width: 1600px) {
+  .portland-logo-small {
+    left: calc(-1980px + 50% + 1300px);
+  }
+  .dallas-logo-small {
+    right: calc(-2560px + 50% + 595px + 1300px);
+  }
+
+  @keyframes por-small-left {
+    from {
+      left: calc(-1980px + 50% + 1300px);
+    }
+    to {
+      left: -1275px;
+    }
+  }
+  @keyframes dal-small-right {
+    from {
+      right: calc(-2560px + 50% + 595px + 1300px);
+    }
+    to {
+      right: -1550px;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .portland-logo-small {
+    left: calc(-1980px + 50% + 1375px);
+  }
+  .dallas-logo-small {
+    right: calc(-2560px + 50% + 595px + 1375px);
+  }
+
+  @keyframes por-small-left {
+    from {
+      left: calc(-1980px + 50% + 1375px);
+    }
+    to {
+      left: -1200px;
+    }
+  }
+  @keyframes dal-small-right {
+    from {
+      right: calc(-2560px + 50% + 595px + 1375px);
+    }
+    to {
+      right: -1475px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .portland-logo-small {
+    left: calc(-1980px + 50% + 1475px);
+  }
+  .dallas-logo-small {
+    right: calc(-2560px + 50% + 595px + 1475px);
+  }
+
+  @keyframes por-small-left {
+    from {
+      left: calc(-1980px + 50% + 1475px);
+    }
+    to {
+      left: -1100px;
+    }
+  }
+  @keyframes dal-small-right {
+    from {
+      right: calc(-2560px + 50% + 595px + 1475px);
+    }
+    to {
+      right: -1375px;
+    }
+  }
+}

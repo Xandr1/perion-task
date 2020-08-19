@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+  </head>
+  <body>
+    <div class="background-site">
+      <div class="baner">
+        <div class="close"></div>
+        <div class="cup-container"></div>
+        <div class="confetti-container"></div>
+        <div class="por"></div>
+        <div class="dal"></div>
+        <div class="game-text">
+          <div class="game-text__one">One</div>
+          <div class="game-text__game">game</div>
+          <div class="game-text__glory">to glory</div>
+        </div>
+        <div class="portland-logo"></div>
+        <div class="dallas-logo"></div>
+        <div class="portland-logo-small"></div>
+        <div class="dallas-logo-small"></div>
+        <div class="tv-match">
+          <div class="tv-match__text-portland">Portland Timbers</div>
+          <div class="tv-match__text-vs">VS</div>
+          <div class="tv-match__text-dallas">FC Dallas</div>
+          <div class="tv-match__date">
+            <span>December 6th</span>
+            <span class="tv-match__elem">|</span>
+            <span class="tv-match__time">3PM ET</span>
+          </div>
+          <div class="tv-match__live"></div>
+          <div class="tv-match__cup-logo"></div>
+          <div class="tv-match__hotspot"></div>
+          <div class="tv-match__watch">Watch TV spot</div>
+          <div class="tv-match__video">
+            <div class="tv-match__play" onclick="play()"></div>
+            <video
+              class="tv-match__promo"
+              onclick="this.paused ? this.play() : this.pause()"
+            >
+              <source src="/video/video.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="tv-match__background"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

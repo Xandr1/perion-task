@@ -1,0 +1,144 @@
+.tv-match {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  &__text-portland,
+  &__text-vs,
+  &__text-dallas {
+    position: absolute;
+    background: #ffffff;
+    margin-left: 25px;
+    padding: 12px 48px 0 8px;
+    font-size: 72px;
+    text-transform: uppercase;
+    line-height: 1;
+    z-index: 1;
+  }
+  &__text-portland {
+    top: 50px;
+  }
+  &__text-vs {
+    top: 150px;
+  }
+  &__text-dallas {
+    top: 250px;
+  }
+  &__date {
+    position: absolute;
+    font-family: "DIN Next LT Pro";
+    font-size: 48px;
+    font-weight: 500;
+    color: #ffffff;
+    top: 375px;
+    margin-left: 25px;
+    z-index: 1;
+  }
+  &__elem {
+    font-family: "DIN Next LT Pro Heavy";
+    color: #d0ad68;
+  }
+  &__time {
+    font-family: "DIN Next LT Pro Heavy";
+  }
+  &__live {
+    position: absolute;
+    width: 530px;
+    height: 200px;
+    background: url("../images/live.png") center no-repeat;
+    margin-left: 30px;
+    top: 400px;
+    z-index: 1;
+  }
+  &__cup-logo {
+    position: absolute;
+    width: 530px;
+    height: 400px;
+    background: url("../images/cup_logo.png") center no-repeat;
+    top: 625px;
+    margin-left: 0;
+    z-index: 1;
+  }
+  &__hotspot {
+    position: absolute;
+    top: 120px;
+    right: 250px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: url("../images/Plus_sign.png") center no-repeat,
+      url("../images/ellipse_1.png") center no-repeat,
+      url("../images/ellipse_2.png") center no-repeat;
+    cursor: url("../images/cursor_hand.png"), auto;
+    z-index: 1;
+  }
+  &__watch {
+    position: absolute;
+    top: 250px;
+    right: 175px;
+    width: 250px;
+    height: 120px;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.75);
+    color: #ffffff;
+    font-family: "DIN Next LT Pro Heavy";
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+  &__video {
+    display: none;
+    position: absolute;
+    top: 180px;
+    right: 310px;
+    max-width: 70%;
+    z-index: 1;
+  }
+  &__play {
+    position: absolute;
+    top: calc(50% - 80px);
+    right: calc(50% - 80px);
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: url("../images/Play_Button.png") center no-repeat;
+    cursor: pointer;
+    z-index: 1;
+  }
+  &__promo {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  &__background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        135deg,
+        rgba(0, 0, 0, 1) 45%,
+        rgba(0, 0, 0, 0) 45%
+      ),
+      linear-gradient(315deg, rgba(0, 0, 0, 0.5) 1%, rgba(0, 0, 0, 0) 15%),
+      linear-gradient(45deg, rgba(0, 0, 0, 0.75) 10%, rgba(0, 0, 0, 0) 35%),
+      url("../images/cup_big_image.png") bottom;
+    filter: sepia(100%) brightness(35%) contrast(130%);
+    -webkit-filter: sepia(100%) brightness(35%) contrast(130%);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .tv-match {
+    &__hotspot {
+      right: 150px;
+    }
+    &__watch {
+      right: 75px;
+    }
+    &__video {
+      right: 210px;
+    }
+  }
+}

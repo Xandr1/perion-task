@@ -1,0 +1,17 @@
+{
+  "name": "perion-task",
+  "version": "1.0.0",
+  "description": "banner test task",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w scss/ -o css/"
+  },
+  "author": "Oleksandr Kirsanov",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^4.14.1",
+    "prettier": "^2.0.5"
+  }
+}
