@@ -1,28 +1,33 @@
 @font-face {
   font-family: "DIN Next LT Pro";
-  src: url("../fonts/DIN_Next/DINNextLTPro-Regular.otf") format("opentype"); }
+  src: url("../fonts/DIN_Next/DINNextLTPro-Regular.otf") format("opentype");
+}
 
 @font-face {
   font-family: "DIN Next LT Pro Heavy";
-  src: url("../fonts/DIN_Next/DINNextLTPro-Heavy.otf") format("opentype"); }
+  src: url("../fonts/DIN_Next/DINNextLTPro-Heavy.otf") format("opentype");
+}
 
 body {
   padding: 0;
   margin: 0;
-  font-family: "DIN Next LT Pro", sans-serif; }
+  font-family: "DIN Next LT Pro", sans-serif;
+}
 
 .background-site {
   font-family: "DIN Next LT Pro Heavy";
   background: url("../images/Desktop_cropped1050.png") no-repeat top;
   height: 100vh;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .baner {
   display: none;
   position: relative;
   height: 100%;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)); }
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+}
 
 .close {
   position: relative;
@@ -33,100 +38,151 @@ body {
   width: 50px;
   border-radius: 50%;
   cursor: pointer;
-  z-index: 3; }
+  z-index: 3;
+}
 
 @keyframes cup-up {
   from {
-    margin-top: 1050px; }
+    margin-top: 1050px;
+  }
   to {
-    margin-top: 0; } }
+    margin-top: 0;
+  }
+}
 
 @keyframes confetti-up {
   from {
-    top: 1050px; }
+    top: 100vh;
+  }
   to {
-    top: 0; } }
+    top: 0;
+  }
+}
 
 .cup-container {
   height: 1050px;
-  background: url("../images/Cup_Hoist.png") center 60px no-repeat;
-  animation: 4s ease-in cup-up; }
+  background: url("../images/Cup_Hoist.png") center 20px no-repeat;
+  animation: 4s ease-in cup-up;
+}
 
 .confetti-container {
   position: absolute;
   left: 0;
-  top: 1050px;
+  top: 100vh;
   width: 100%;
   height: 1050px;
   animation: 4s ease-in confetti-up;
-  animation-delay: 2s; }
+  animation-delay: 2s;
+}
 
 .gold-confetti {
-  background: linear-gradient(45deg, #a66f01, rgba(166, 111, 1, 0.3)); }
+  background: linear-gradient(45deg, #a66f01, rgba(166, 111, 1, 0.3));
+}
 
 .black-confetti {
-  background: linear-gradient(90deg, black, rgba(0, 0, 0, 0.3)); }
+  background: linear-gradient(90deg, black, rgba(0, 0, 0, 0.3));
+}
 
 .confetti {
-  clip-path: polygon(10% 0, 100% 0, 95% 25%, 85% 45%, 85% 55%, 95% 75%, 100% 100%, 10% 100%, 10% 75%, 0 50%, 5% 25%);
+  clip-path: polygon(
+    10% 0,
+    100% 0,
+    95% 25%,
+    85% 45%,
+    85% 55%,
+    95% 75%,
+    100% 100%,
+    10% 100%,
+    10% 75%,
+    0 50%,
+    5% 25%
+  );
   width: 12px;
   position: absolute;
   animation: confetti 6s linear -3s infinite;
-  transform-origin: left top; }
+  transform-origin: left top;
+}
 
 @keyframes confetti {
   0% {
-    transform: rotateZ(15deg) rotateY(0deg) translate(0, 0); }
+    transform: rotateZ(15deg) rotateY(0deg) translate(0, 0);
+  }
   25% {
-    transform: rotateZ(5deg) rotateY(360deg) translate(-5vw, 20vh); }
+    transform: rotateZ(5deg) rotateY(360deg) translate(-5vw, 20vh);
+  }
   50% {
-    transform: rotateZ(15deg) rotateY(720deg) translate(5vw, 60vh); }
+    transform: rotateZ(15deg) rotateY(720deg) translate(5vw, 60vh);
+  }
   75% {
-    transform: rotateZ(5deg) rotateY(1080deg) translate(-10vw, 80vh); }
+    transform: rotateZ(5deg) rotateY(1080deg) translate(-10vw, 80vh);
+  }
   100% {
-    transform: rotateZ(15deg) rotateY(1440deg) translate(10vw, 110vh); } }
+    transform: rotateZ(15deg) rotateY(1440deg) translate(10vw, 110vh);
+  }
+}
 
 @keyframes por-right {
   from {
-    left: -1980px; }
+    left: -1980px;
+  }
   to {
-    left: calc(-1980px + 50% + 595px); } }
+    left: calc(-1980px + 50% + 595px);
+  }
+}
 
 @keyframes dal-left {
   from {
-    right: -2560px; }
+    right: -2560px;
+  }
   to {
-    right: calc(-2560px + 50% + 595px + 290px); } }
+    right: calc(-2560px + 50% + 595px + 290px);
+  }
+}
 
 @keyframes por-left {
   from {
-    left: calc(-1980px + 50% + 595px); }
+    left: calc(-1980px + 50% + 595px);
+  }
   to {
-    left: -1980px; } }
+    left: -1980px;
+  }
+}
 
 @keyframes dal-right {
   from {
-    right: calc(-2560px + 50% + 595px + 290px); }
+    right: calc(-2560px + 50% + 595px + 290px);
+  }
   to {
-    right: -2560px; } }
+    right: -2560px;
+  }
+}
 
 @keyframes por-small-left {
   from {
-    left: calc(-1980px + 50% + 1200px); }
+    left: calc(-1980px + 50% + 1200px);
+  }
   to {
-    left: -1375px; } }
+    left: -1375px;
+  }
+}
 
 @keyframes dal-small-right {
   from {
-    right: calc(-2560px + 50% + 595px + 1200px); }
+    right: calc(-2560px + 50% + 595px + 1200px);
+  }
   to {
-    right: -1650px; } }
+    right: -1650px;
+  }
+}
 
 @keyframes logo-opacity {
   from {
-    opacity: 1; }
+    opacity: 1;
+  }
   to {
-    opacity: 0.1; } }
+    opacity: 0.1;
+  }
+}
 
 .por {
   position: absolute;
@@ -139,7 +195,8 @@ body {
   -webkit-filter: sepia(100%) brightness(50%);
   animation: 4s ease-in por-right;
   animation-delay: 7s;
-  z-index: 2; }
+  z-index: 2;
+}
 
 .dal {
   position: absolute;
@@ -152,7 +209,8 @@ body {
   -webkit-filter: sepia(100%) brightness(50%);
   animation: 4s ease-in dal-left;
   animation-delay: 7s;
-  z-index: 2; }
+  z-index: 2;
+}
 
 .game-text {
   position: absolute;
@@ -162,20 +220,24 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   text-shadow: 7px 7px 30px #000000;
-  z-index: 2; }
-  .game-text__one {
-    visibility: hidden;
-    font-size: 308px;
-    line-height: 0.75; }
-  .game-text__game {
-    visibility: hidden;
-    font-size: 215px;
-    line-height: 0.75; }
-  .game-text__glory {
-    visibility: hidden;
-    padding-left: 8px;
-    font-size: 122px;
-    line-height: 0.75; }
+  z-index: 2;
+}
+.game-text__one {
+  visibility: hidden;
+  font-size: 308px;
+  line-height: 0.75;
+}
+.game-text__game {
+  visibility: hidden;
+  font-size: 215px;
+  line-height: 0.75;
+}
+.game-text__glory {
+  visibility: hidden;
+  padding-left: 8px;
+  font-size: 122px;
+  line-height: 0.75;
+}
 
 .portland-logo {
   display: none;
@@ -186,7 +248,8 @@ body {
   padding-top: 45%;
   top: 10%;
   left: -15%;
-  z-index: 2; }
+  z-index: 2;
+}
 
 .dallas-logo {
   display: none;
@@ -197,7 +260,8 @@ body {
   padding-top: 45%;
   top: 10%;
   right: -15%;
-  z-index: 2; }
+  z-index: 2;
+}
 
 .portland-logo-small {
   display: none;
@@ -208,7 +272,8 @@ body {
   padding-top: 20%;
   top: 30%;
   left: calc(-1980px + 50% + 1200px);
-  z-index: 2; }
+  z-index: 2;
+}
 
 .dallas-logo-small {
   display: none;
@@ -219,55 +284,83 @@ body {
   padding-top: 20%;
   top: 30%;
   right: calc(-2560px + 50% + 595px + 1200px);
-  z-index: 2; }
+  z-index: 2;
+}
 
 @media screen and (max-width: 1600px) {
   .portland-logo-small {
-    left: calc(-1980px + 50% + 1300px); }
+    left: calc(-1980px + 50% + 1300px);
+  }
   .dallas-logo-small {
-    right: calc(-2560px + 50% + 595px + 1300px); }
+    right: calc(-2560px + 50% + 595px + 1300px);
+  }
   @keyframes por-small-left {
     from {
-      left: calc(-1980px + 50% + 1300px); }
+      left: calc(-1980px + 50% + 1300px);
+    }
     to {
-      left: -1275px; } }
+      left: -1275px;
+    }
+  }
   @keyframes dal-small-right {
     from {
-      right: calc(-2560px + 50% + 595px + 1300px); }
+      right: calc(-2560px + 50% + 595px + 1300px);
+    }
     to {
-      right: -1550px; } } }
+      right: -1550px;
+    }
+  }
+}
 
 @media screen and (max-width: 1440px) {
   .portland-logo-small {
-    left: calc(-1980px + 50% + 1375px); }
+    left: calc(-1980px + 50% + 1375px);
+  }
   .dallas-logo-small {
-    right: calc(-2560px + 50% + 595px + 1375px); }
+    right: calc(-2560px + 50% + 595px + 1375px);
+  }
   @keyframes por-small-left {
     from {
-      left: calc(-1980px + 50% + 1375px); }
+      left: calc(-1980px + 50% + 1375px);
+    }
     to {
-      left: -1200px; } }
+      left: -1200px;
+    }
+  }
   @keyframes dal-small-right {
     from {
-      right: calc(-2560px + 50% + 595px + 1375px); }
+      right: calc(-2560px + 50% + 595px + 1375px);
+    }
     to {
-      right: -1475px; } } }
+      right: -1475px;
+    }
+  }
+}
 
 @media screen and (max-width: 1024px) {
   .portland-logo-small {
-    left: calc(-1980px + 50% + 1475px); }
+    left: calc(-1980px + 50% + 1475px);
+  }
   .dallas-logo-small {
-    right: calc(-2560px + 50% + 595px + 1475px); }
+    right: calc(-2560px + 50% + 595px + 1475px);
+  }
   @keyframes por-small-left {
     from {
-      left: calc(-1980px + 50% + 1475px); }
+      left: calc(-1980px + 50% + 1475px);
+    }
     to {
-      left: -1100px; } }
+      left: -1100px;
+    }
+  }
   @keyframes dal-small-right {
     from {
-      right: calc(-2560px + 50% + 595px + 1475px); }
+      right: calc(-2560px + 50% + 595px + 1475px);
+    }
     to {
-      right: -1375px; } } }
+      right: -1375px;
+    }
+  }
+}
 
 .tv-match {
   display: none;
@@ -275,108 +368,135 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; }
-  .tv-match__text-portland, .tv-match__text-vs, .tv-match__text-dallas {
-    position: absolute;
-    background: #ffffff;
-    margin-left: 25px;
-    padding: 12px 48px 0 8px;
-    font-size: 72px;
-    text-transform: uppercase;
-    line-height: 1;
-    z-index: 1; }
-  .tv-match__text-portland {
-    top: 50px; }
-  .tv-match__text-vs {
-    top: 150px; }
-  .tv-match__text-dallas {
-    top: 250px; }
-  .tv-match__date {
-    position: absolute;
-    font-family: "DIN Next LT Pro";
-    font-size: 48px;
-    font-weight: 500;
-    color: #ffffff;
-    top: 375px;
-    margin-left: 25px;
-    z-index: 1; }
-  .tv-match__elem {
-    font-family: "DIN Next LT Pro Heavy";
-    color: #d0ad68; }
-  .tv-match__time {
-    font-family: "DIN Next LT Pro Heavy"; }
-  .tv-match__live {
-    position: absolute;
-    width: 530px;
-    height: 200px;
-    background: url("../images/live.png") center no-repeat;
-    margin-left: 30px;
-    top: 400px;
-    z-index: 1; }
-  .tv-match__cup-logo {
-    position: absolute;
-    width: 530px;
-    height: 400px;
-    background: url("../images/cup_logo.png") center no-repeat;
-    top: 625px;
-    margin-left: 0;
-    z-index: 1; }
-  .tv-match__hotspot {
-    position: absolute;
-    top: 120px;
-    right: 250px;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background: url("../images/Plus_sign.png") center no-repeat, url("../images/ellipse_1.png") center no-repeat, url("../images/ellipse_2.png") center no-repeat;
-    cursor: url("../images/cursor_hand.png"), auto;
-    z-index: 1; }
-  .tv-match__watch {
-    position: absolute;
-    top: 250px;
-    right: 175px;
-    width: 250px;
-    height: 120px;
-    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.75);
-    color: #ffffff;
-    font-family: "DIN Next LT Pro Heavy";
-    font-size: 30px;
-    font-weight: 400;
-    text-transform: uppercase;
-    z-index: 1; }
-  .tv-match__video {
-    display: none;
-    position: absolute;
-    top: 180px;
-    right: 310px;
-    max-width: 70%;
-    z-index: 1; }
-  .tv-match__play {
-    position: absolute;
-    top: calc(50% - 80px);
-    right: calc(50% - 80px);
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    background: url("../images/Play_Button.png") center no-repeat;
-    cursor: pointer;
-    z-index: 1; }
-  .tv-match__promo {
-    display: block;
-    width: 100%;
-    height: 100%; }
-  .tv-match__background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, black 45%, rgba(0, 0, 0, 0) 45%), linear-gradient(315deg, rgba(0, 0, 0, 0.5) 1%, rgba(0, 0, 0, 0) 15%), linear-gradient(45deg, rgba(0, 0, 0, 0.75) 10%, rgba(0, 0, 0, 0) 35%), url("../images/cup_big_image.png") bottom;
-    filter: sepia(100%) brightness(35%) contrast(130%);
-    -webkit-filter: sepia(100%) brightness(35%) contrast(130%); }
+  height: 100%;
+}
+.tv-match__text-portland,
+.tv-match__text-vs,
+.tv-match__text-dallas {
+  position: absolute;
+  background: #ffffff;
+  margin-left: 25px;
+  padding: 12px 48px 0 8px;
+  font-size: 72px;
+  text-transform: uppercase;
+  line-height: 1;
+  z-index: 1;
+}
+.tv-match__text-portland {
+  top: 50px;
+}
+.tv-match__text-vs {
+  top: 150px;
+}
+.tv-match__text-dallas {
+  top: 250px;
+}
+.tv-match__date {
+  position: absolute;
+  font-family: "DIN Next LT Pro";
+  font-size: 48px;
+  font-weight: 500;
+  color: #ffffff;
+  top: 375px;
+  margin-left: 25px;
+  z-index: 1;
+}
+.tv-match__elem {
+  font-family: "DIN Next LT Pro Heavy";
+  color: #d0ad68;
+}
+.tv-match__time {
+  font-family: "DIN Next LT Pro Heavy";
+}
+.tv-match__live {
+  position: absolute;
+  width: 530px;
+  height: 200px;
+  background: url("../images/live.png") center no-repeat;
+  margin-left: 30px;
+  top: 400px;
+  z-index: 1;
+}
+.tv-match__cup-logo {
+  position: absolute;
+  width: 530px;
+  height: 400px;
+  background: url("../images/cup_logo.png") center no-repeat;
+  top: 625px;
+  margin-left: 0;
+  z-index: 1;
+}
+.tv-match__hotspot {
+  position: absolute;
+  top: 120px;
+  right: 250px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: url("../images/Plus_sign.png") center no-repeat,
+    url("../images/ellipse_1.png") center no-repeat,
+    url("../images/ellipse_2.png") center no-repeat;
+  cursor: url("../images/cursor_hand.png"), auto;
+  z-index: 1;
+}
+.tv-match__watch {
+  position: absolute;
+  top: 250px;
+  right: 175px;
+  width: 250px;
+  height: 120px;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+  font-family: "DIN Next LT Pro Heavy";
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  z-index: 1;
+}
+.tv-match__video {
+  display: none;
+  position: absolute;
+  top: 180px;
+  right: 310px;
+  max-width: 70%;
+  z-index: 1;
+}
+.tv-match__play {
+  position: absolute;
+  top: calc(50% - 80px);
+  right: calc(50% - 80px);
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: url("../images/Play_Button.png") center no-repeat;
+  cursor: pointer;
+  z-index: 1;
+}
+.tv-match__promo {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.tv-match__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, black 45%, rgba(0, 0, 0, 0) 45%),
+    linear-gradient(315deg, rgba(0, 0, 0, 0.5) 1%, rgba(0, 0, 0, 0) 15%),
+    linear-gradient(45deg, rgba(0, 0, 0, 0.75) 10%, rgba(0, 0, 0, 0) 35%),
+    url("../images/cup_big_image.png") bottom;
+  filter: sepia(100%) brightness(35%) contrast(130%);
+  -webkit-filter: sepia(100%) brightness(35%) contrast(130%);
+}
 
 @media screen and (max-width: 1024px) {
   .tv-match__hotspot {
-    right: 150px; }
+    right: 150px;
+  }
   .tv-match__watch {
-    right: 75px; }
+    right: 75px;
+  }
   .tv-match__video {
-    right: 210px; } }
+    right: 210px;
+  }
+}
