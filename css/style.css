@@ -14,7 +14,7 @@ body {
 .background-site {
   font-family: "DIN Next LT Pro Heavy";
   background: url("../images/Desktop_cropped1050.png") no-repeat center;
-  height: 1050px;
+  height: 100vh;
   overflow: hidden; }
 
 .baner {
